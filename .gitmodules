@@ -1,0 +1,6 @@
+[submodule "subModules/bootstrap"]
+	path = subModules/bootstrap
+	url = git@github.com:twitter/bootstrap.git
+[submodule "subModules/bootswatch"]
+	path = subModules/bootswatch
+	url = git@github.com:thomaspark/bootswatch.git
