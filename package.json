@@ -1,0 +1,22 @@
+{
+  "name": "qazzian_co_uk",
+  "description": "Qazzian.co.uk website",
+  "main": "./index.js",
+  "author": {
+    "name": "Qazzian"
+  },
+  "version": "0.0.1",
+  "repository": {
+    "type": "git"
+  },
+  "dependencies": {
+    "less": "latest",
+    "mustache": "latest"
+  },
+  "scripts": {
+    "start": "index.js"
+  },
+  "engines": {
+    "node": "0.8.x"
+  }
+}
