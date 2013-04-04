@@ -1,0 +1,11 @@
+<!-- TODO Need to check on the bootstrap way of defining a menu
+Also need to think about the structure -->
+{{#menu}}
+<div class="navbar navbar-inverse">
+	<ul class="nav">
+		{{#menuItems}}
+			<li {{#selected}}class="active" {{/selected}}><a href="{{link}}">name</a></li>
+		{{/menuItems}}
+	</ul>
+</div>
+{{/menu}}

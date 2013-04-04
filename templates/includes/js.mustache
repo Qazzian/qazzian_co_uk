@@ -1,0 +1,27 @@
+		<!-- javascript -->
+		<!-- <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script> -->
+		<script src="{{assetRoot}}/js/jquery.js"></script>
+		<script src="{{assetRoot}}/js/bootstrap-transition.js"></script>
+		<script src="{{assetRoot}}/js/bootstrap-alert.js"></script>
+		<script src="{{assetRoot}}/js/bootstrap-modal.js"></script>
+		<script src="{{assetRoot}}/js/bootstrap-dropdown.js"></script>
+		<script src="{{assetRoot}}/js/bootstrap-scrollspy.js"></script>
+		<script src="{{assetRoot}}/js/bootstrap-tab.js"></script>
+		<script src="{{assetRoot}}/js/bootstrap-tooltip.js"></script>
+		<script src="{{assetRoot}}/js/bootstrap-popover.js"></script>
+		<script src="{{assetRoot}}/js/bootstrap-button.js"></script>
+		<script src="{{assetRoot}}/js/bootstrap-collapse.js"></script>
+		<script src="{{assetRoot}}/js/bootstrap-carousel.js"></script>
+		<script src="{{assetRoot}}/js/bootstrap-typeahead.js"></script>
+		<script src="{{assetRoot}}/js/bootstrap-affix.js"></script>
+
+		<script src="{{assetRoot}}/js/holder/holder.js"></script>
+		<!-- <script src="{{assetRoot}}/js/google-code-prettify/prettify.js"></script> -->
+
+		<script src="{{assetRoot}}/js/application.js"></script>
+
+		{{! Note that we expect a fully qulified url here. 
+			If it's local the assetRoot needs to be added within the context builder. }}
+		{{#javascript}}
+			<script src="{{src}}"></script>			
+		{{/javascript}}
