@@ -1,5 +1,8 @@
 {
 	"siteName": "Qazzian.co.uk",
 	"bootswatchTheme": "superhero",
-	"defaultHome": "index"
+	"defaultHome": "index",
+
+	"javascript": [],
+	"css": []
 }

@@ -19,9 +19,14 @@
 		<!-- <script src="{{assetRoot}}/js/google-code-prettify/prettify.js"></script> -->
 
 		<script src="{{assetRoot}}/js/application.js"></script>
+		<!-- site wide specific scripts -->
+		{{#site.javascript}}
+			<script src="{{.}}"></script>
+		{{/site.javascript}}
 
 		{{! Note that we expect a fully qulified url here. 
 			If it's local the assetRoot needs to be added within the context builder. }}
-		{{#javascript}}
-			<script src="{{src}}"></script>			
-		{{/javascript}}
+			<!-- Page specific scripts -->
+		{{#page.javascript}}
+			<script src="{{.}}"></script>
+		{{/page.javascript}}
