@@ -4,5 +4,7 @@
 	"defaultHome": "index",
 
 	"javascript": [],
-	"css": []
+	"css": [],
+
+	"buildPath": "build"
 }
