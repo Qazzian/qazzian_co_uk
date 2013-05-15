@@ -6,5 +6,6 @@
 	"javascript": [],
 	"css": [],
 
-	"buildPath": "build"
+	"buildPath": "build",
+	"assetRoot": "./assets"
 }
