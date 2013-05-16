@@ -5,7 +5,7 @@ BW_DIR = ${BOOSTWATCH_DIR}/${BOOSTWATCH_THEME}/
 
 BUILD_DIR = ./build
 
-build: clean bootstrap html
+build: clean bootstrap html siteAssets
 
 bootstrap: node_modules
 	@echo "\nBuilding Assets..."
@@ -21,6 +21,10 @@ bootstrap: node_modules
 html: node_modules
 	@echo "\nBuild HTML..."
 	@node ./lib/test.js
+
+siteAssets: 
+	@echo "\nCopy site specific assets..."
+	@rsync -a templates/assets/ build/assets/
 
 clean:
 	@echo "\nDelete previous build"
