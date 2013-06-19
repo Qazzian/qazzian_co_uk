@@ -18,6 +18,6 @@ Look at config.json.example for more details of what each variable means.
 To access the variable from the templates use {{config.VAR_NAME}}
 
 Once these have been setup run node index.js to build the site
-The full site will be saved in the build/ dir
+The compiled site will be saved in the build/ dir
 
 
