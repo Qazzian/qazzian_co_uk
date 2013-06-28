@@ -4,8 +4,10 @@
 	"defaultHome": "index",
 
 	"javascript": [],
-	"css": [],
+	"css": [
+		"/css/bootswatch_amends.css"
+	],
 
 	"buildPath": "build",
-	"assetRoot": "./assets"
+	"assetRoot": "/assets"
 }

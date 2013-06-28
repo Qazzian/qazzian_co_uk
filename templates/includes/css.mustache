@@ -1,8 +1,8 @@
 <link rel="stylesheet" href="{{config.assetRoot}}/css/bootstrap.min.css" />
 <!-- site wide specific styles -->
-{{#site.css}}
-	<link rel="stylesheet" href="." />
-{{/site.css}}
+{{#config.css}}
+	<link rel="stylesheet" href="{{config.assetRoot}}{{.}}" />
+{{/config.css}}
 <!-- Page specific styles -->
 {{#page.css}}
 	<link rel="stylesheet" href="." />
