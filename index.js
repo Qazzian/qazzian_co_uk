@@ -39,10 +39,10 @@ function runMake(){
  
 	// executes `pwd`
 	child = exec("make", function (error, stdout, stderr) {
-	  sys.print('stdout: ' + stdout);
-	  sys.print('stderr: ' + stderr);
+	  if (stdout) sys.print(stdout + '\n');
+	  if (stderr) sys.print('Errors: ' + stderr + '\n');
 	  if (error !== null) {
-	    console.log('Make error: ' + error);
+	    sys.error('Make error: ' + error + '\n');
 	  }
 	});
 }
