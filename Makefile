@@ -18,9 +18,10 @@ bootstrap: node_modules
 	@mkdir -p ./build/assets
 	@cp -R ./tmp/bootstrap/ ./build/assets
 
+# TODO change so we're not running the tests anymore. But don't want to run index.js either as that will re-run make
 html: node_modules
 	@echo "\nBuild HTML..."
-	@node ./lib/test.js
+	@node ./lib/run.js
 
 siteAssets: 
 	@echo "\nCopy site specific assets..."
