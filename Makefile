@@ -9,7 +9,7 @@ build: clean bootstrap html siteAssets
 
 bootstrap: node_modules
 	@echo "\nBuilding Assets..."
-	@mkdir ./tmp
+	@mkdir -p ./tmp/less
 	@cp -r ${BOOTSTRAP} ./tmp/
 	@cp ${BW_DIR}variables.less ./tmp/less/variables.less
 	@cp ${BW_DIR}bootswatch.less ./tmp/less/bootswatch.less
