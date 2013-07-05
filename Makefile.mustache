@@ -9,14 +9,14 @@ build: clean bootstrap html siteAssets
 
 bootstrap: node_modules
 	@echo "\nBuilding Assets..."
-	@mkdir -p ./tmp/less
-	@cp -r ${BOOTSTRAP} ./tmp/
+	@mkdir ./tmp
+	@cp -r ${BOOTSTRAP}* ./tmp/
 	@cp ${BW_DIR}variables.less ./tmp/less/variables.less
 	@cp ${BW_DIR}bootswatch.less ./tmp/less/bootswatch.less
 	@echo "\n@import \"bootswatch.less\";" >> ./tmp/less/bootstrap.less 
 	@cd ./tmp; ln -s ../node_modules; make bootstrap
 	@mkdir -p ./build/assets
-	@cp -R ./tmp/bootstrap/ ./build/assets
+	@cp -R ./tmp/bootstrap/* ./build/assets
 
 # TODO change so we're not running the tests anymore. But don't want to run index.js either as that will re-run make
 html: node_modules
