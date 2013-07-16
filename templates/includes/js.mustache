@@ -1,28 +1,11 @@
 		<!-- javascript -->
 		<!-- <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script> -->
 		<script src="{{config.assetRoot}}/js/jquery.js"></script>
-		<script src="{{config.assetRoot}}/js/bootstrap-transition.js"></script>
-		<script src="{{config.assetRoot}}/js/bootstrap-alert.js"></script>
-		<script src="{{config.assetRoot}}/js/bootstrap-modal.js"></script>
-		<script src="{{config.assetRoot}}/js/bootstrap-dropdown.js"></script>
-		<script src="{{config.assetRoot}}/js/bootstrap-scrollspy.js"></script>
-		<script src="{{config.assetRoot}}/js/bootstrap-tab.js"></script>
-		<script src="{{config.assetRoot}}/js/bootstrap-tooltip.js"></script>
-		<script src="{{config.assetRoot}}/js/bootstrap-popover.js"></script>
-		<script src="{{config.assetRoot}}/js/bootstrap-button.js"></script>
-		<script src="{{config.assetRoot}}/js/bootstrap-collapse.js"></script>
-		<script src="{{config.assetRoot}}/js/bootstrap-carousel.js"></script>
-		<script src="{{config.assetRoot}}/js/bootstrap-typeahead.js"></script>
-		<script src="{{config.assetRoot}}/js/bootstrap-affix.js"></script>
-
-		<script src="{{config.assetRoot}}/js/holder/holder.js"></script>
-		<!-- <script src="{{config.assetRoot}}/js/google-code-prettify/prettify.js"></script> -->
-
-		<script src="{{config.assetRoot}}/js/application.js"></script>
+		<script src="{{config.assetRoot}}/js/bootstrap.js"></script>
 		<!-- site wide specific scripts -->
-		{{#site.javascript}}
+		{{#config.javascript}}
 			<script src="{{.}}"></script>
-		{{/site.javascript}}
+		{{/config.javascript}}
 
 		{{! Note that we expect a fully qulified url here. 
 			If it's local the assetRoot needs to be added within the context builder. }}
