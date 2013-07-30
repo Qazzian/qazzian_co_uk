@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oswald Regular'), local('Oswald-Regular'), url(../fonts/Oswald.woff) format('woff');
+}
+
 .nav > .active > a {
 	color: rgba(223, 186, 164, 1);
 	text-shadow: -2px 2px 0 rgba(145, 118, 102, 1);

@@ -2,10 +2,11 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>{{title}}</title>
+		<title>{{#page.title}}{{page.title}} - {{/page.title}}{{config.siteName}}</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="">
-		<meta name="author" content="ian@Qazzian.co.uk">
+		<meta name="keywords" content="">
+		<meta name="author" content="{{config.contact}}">
 
 		<!-- styles -->
 		{{>css}}
@@ -26,17 +27,20 @@
 	<body data-spy="scroll" data-target=".bs-docs-sidebar">
 
 		<!-- Navbar ================================================== -->
-		<div class="navbar navbar-inverse">
+		<header class="navbar navbar-inverse">
 			<div class="navbar-inner">
 				<div class="container">
-					<span class="build-time muted small-print ">  Built: {{buildTime}}</span>
-					<a class="brand" href="/index.html">Qazzian.co.uk</a>
+					<a class="brand" href="{{pages.0.url}}">{{config.siteName}}</a>
 					{{>MainMenu}}
 				</div>
 			</div>
-		</div>
+		</header>
 
-		{{>page}}
+		<main class="container">
+			{{>page}}
+		</main>
+
+		
 
 		{{>footer}}
 		{{>js}}

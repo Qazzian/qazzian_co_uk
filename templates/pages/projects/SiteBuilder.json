@@ -1,6 +1,7 @@
 {
 	"pageName": "Site Builder",
 	"title": "",
+	"description": "A simple CMS type system for generating static websites using boostrap and bootswatch. This site has been built with it.",
 	"css": [],
 	"js": []
 }

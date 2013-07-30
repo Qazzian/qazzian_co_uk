@@ -1,6 +1,7 @@
 {
 	"pageName": "Crack Attack",
-	"title": "",
+	"title": "Crack Attack",
+	"description": "A simple game based on Tetris Attack by Nintendo. This is a HTML based remake of an already exisiting opensource game.",
 	"css": [],
 	"js": []
 }

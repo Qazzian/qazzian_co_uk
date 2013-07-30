@@ -1,13 +1,15 @@
 {
 	"siteName": "Qazzian.com",
-	"bootswatchTheme": "superhero",
+	"contact": "ian@qazzian.co.uk",
 	"defaultHome": "index",
+
+	"bootswatchTheme": "superhero",
+	"buildPath": "build",
+	"assetRoot": "/assets",
 
 	"javascript": [],
 	"css": [
+		"/css/bootswatch-responsive.css",
 		"/css/bootswatch_amends.css"
-	],
-
-	"buildPath": "build",
-	"assetRoot": "/assets"
+	]
 }

@@ -1,1 +1,1 @@
-nodemon -w lib -w templates -x make 
+nodemon -w lib -w templates  -x make 
