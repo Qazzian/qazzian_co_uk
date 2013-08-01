@@ -4,8 +4,10 @@
 		<meta charset="utf-8">
 		<title>{{#page.title}}{{page.title}} - {{/page.title}}{{config.siteName}}</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="">
-		<meta name="keywords" content="">
+		{{#page.description}}<meta name="description" content="{{page.description}}">{{/page.description}}
+		{{^page.description}}<meta name="description" content="{{config.description}}">{{/page.description}}
+		{{#page.keywords}}<meta name="keywords" content="{{page.keywords}}">{{/page.keywords}}
+		{{^page.keywords}}<meta name="keywords" content="{{config.keywords}}">{{/page.keywords}}
 		<meta name="author" content="{{config.contact}}">
 
 		<script type="text/javascript">
