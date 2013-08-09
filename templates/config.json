@@ -13,6 +13,7 @@
 	"javascript": [],
 	"css": [
 		"/css/bootswatch-responsive.css",
-		"/css/bootswatch_amends.css"
+		"/css/bootswatch_amends.css",
+		"/css/qazzian.css"
 	]
 }
