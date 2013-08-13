@@ -1,9 +1,23 @@
-
-
 .small-print {
 	font-size: small;
 }
 
+
+.footer {
+	margin-top: 2em;
+	min-height: 0;
+	padding-top: 1ex;
+}
+.footer p {
+	margin: 0;
+}
+
+.copyright{
+	float: left;
+}
+.license {
+	text-align: center;
+}
 .build-time {
 	float: right;
 }
