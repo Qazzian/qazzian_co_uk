@@ -4,17 +4,12 @@
 
   <h2>Top Projects</h2>
 
-  <article>
-    <h3><a href="/projects/SiteBuilder.html">Static Site Builder</h3>
-    <p>
-      A <a href="http://nodejs.org">Nodejs</a> project to build a static site from a number of config files and mustache templates.
-    </p> 
-  </article>
-
-  <article>
-    <h3><a href="/projects/CrackAttack.html">Crack Attack</a></h3>
-    <p>A game</p>
-  </article>
+  {{#pageIndex.projects.children}}
+    <article>
+      <h3><A href="{{url}}">{{title}}</a></h3>
+      <p>{{description}}</p>
+    </article>
+  {{/pageIndex.projects.children}}
 
 
 </div>
