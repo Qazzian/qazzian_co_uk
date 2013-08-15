@@ -1,7 +1,7 @@
 BOOTSTRAP = ./subModules/bootstrap/
 BOOSTWATCH_DIR = ./subModules/bootswatch/
 BOOSTWATCH_THEME = superhero
-BW_DIR = ${BOOSTWATCH_DIR}/${BOOSTWATCH_THEME}/
+BW_DIR = ${BOOSTWATCH_DIR}/2/${BOOSTWATCH_THEME}/
 
 BUILD_DIR = ./build
 
