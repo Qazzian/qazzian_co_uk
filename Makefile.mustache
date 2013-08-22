@@ -1,9 +1,4 @@
 BOOTSTRAP = ./subModules/bootstrap/
-BOOSTWATCH_DIR = ./subModules/bootswatch/
-BOOSTWATCH_THEME = {{bootswatchTheme}}
-BW_DIR = ${BOOSTWATCH_DIR}/2/${BOOSTWATCH_THEME}/
-
-BUILD_DIR = ./build
 
 build: clean bootstrap html siteAssets
 
@@ -11,9 +6,12 @@ bootstrap: node_modules
 	@echo "\nBuilding Assets..."
 	@mkdir ./tmp
 	@cp -r ${BOOTSTRAP}* ./tmp/
-	@cp ${BW_DIR}variables.less ./tmp/less/variables.less
-	@cp ${BW_DIR}bootswatch.less ./tmp/less/bootswatch.less
-	@echo "\n@import \"bootswatch.less\";" >> ./tmp/less/bootstrap.less 
+	@cp {{{bootstrapVariablesFile}}} ./tmp/less/variables.less
+	{{#extraLessFiles}}
+	@cp {{{dir}}}/{{{file}}} ./tmp/less/{{{file}}}
+	@echo "\n@import \"{{{file}}}\";" >> ./tmp/less/bootstrap.less 
+	{{/extraLessFiles}}
+	
 	@cd ./tmp; ln -s ../node_modules; make bootstrap
 	@mkdir -p ./build/assets
 	@cp -R ./tmp/bootstrap/* ./build/assets

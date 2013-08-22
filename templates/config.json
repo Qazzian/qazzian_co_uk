@@ -3,7 +3,9 @@
 	"contact": "ian@qazzian.co.uk",
 	"defaultHome": "index",
 
-	"bootswatchTheme": "superhero",
+	"bootswatchTheme": "slate",
+	"bootstrapVariablesFile" : "",
+	"extraLessFiles" : [],
 	"buildPath": "build",
 	"assetRoot": "/assets",
 

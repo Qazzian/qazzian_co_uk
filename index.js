@@ -13,8 +13,11 @@
  */
 
 var fs = require('fs'),
+	path = require('path'),
 	siteConfig = require('./lib/siteConfig.js'),
 	Mustache = require('mustache');
+
+var BOOSTWATCH_DIR = "subModules/bootswatch/";
 
 (function(){
 	renderMakeFile();
@@ -27,9 +30,22 @@ function renderMakeFile() {
 		makeTemplate = fs.readFileSync('./Makefile.mustache', 'utf8'),
 		makeContents;
 	
+	context = processBootstrapOptions(context);
 	makeContents = Mustache.render(makeTemplate, context);
 	// console.log("Make File: \n", makeContents);
 	fs.writeFileSync('./Makefile', makeContents, 'utf8');
+}
+
+function processBootstrapOptions(context){
+	if (context.bootswatchTheme){
+		context.bootstrapVariablesFile = path.join(__dirname, BOOSTWATCH_DIR, context.bootswatchTheme, 'variables.less');
+		context.extraLessFiles = [{
+			dir: path.join(__dirname, BOOSTWATCH_DIR, context.bootswatchTheme),
+			file: 'bootswatch.less'
+		}];
+	}
+
+	return context;
 }
 
 function runMake(){
@@ -39,10 +55,10 @@ function runMake(){
  
 	// executes `pwd`
 	child = exec("make", function (error, stdout, stderr) {
-	  if (stdout) sys.print(stdout + '\n');
-	  if (stderr) sys.print('Errors: ' + stderr + '\n');
-	  if (error !== null) {
-	    sys.error('Make error: ' + error + '\n');
-	  }
+		if (stdout) sys.print(stdout + '\n');
+		if (stderr) sys.print('Errors: ' + stderr + '\n');
+		if (error !== null) {
+			sys.error('Make error: ' + error + '\n');
+		}
 	});
 }
