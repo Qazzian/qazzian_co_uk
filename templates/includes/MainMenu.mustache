@@ -2,12 +2,10 @@
 Also need to think about the structure -->
 <!-- MainMenu ================================================== -->
 {{#pages.length}}
-<div class="navbar navbar-inverse">
-	<ul class="nav">
-		{{#pages}}
-			<li {{#selected}}class="active" {{/selected}}><a href="{{{url}}}">{{pageName}}</a></li>
-		{{/pages}}
-	</ul>
-</div>
+<ul class="nav navbar-nav">
+	{{#pages}}
+		<li {{#selected}}class="active" {{/selected}}><a href="{{{url}}}">{{pageName}}</a></li>
+	{{/pages}}
+</ul>
 {{/pages.length}}
 <!-- MainMenu END ================================================== -->

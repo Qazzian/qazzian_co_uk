@@ -35,26 +35,26 @@
 	<body data-spy="scroll" data-target=".bs-docs-sidebar">
 
 		<!-- Navbar ================================================== -->
-		<header class="navbar navbar-inverse container">
-			<div class="navbar-inner">
-				<div class="container">
-					<a class="brand" href="{{pages.0.url}}">{{config.siteName}}</a>
-					{{>MainMenu}}
-				</div>
-			</div>
-		</header>
+		<div class="container">
 
-		<main class="container row">
-			<div class="span10 offset1">
+			<header class="navbar navbar-inverse" role="navigation">
+				<nav class="navbar-inner">
+					<a class="navbar-brand brand" href="{{pages.0.url}}">{{config.siteName}}</a>
+					{{>MainMenu}}
+				</nav>
+			</header>
+		</div>
+
+		<main class="container">
+			<div class="">
 				{{>page}}
 			</div>
 		</main>
 
 		
 
-		<div class="container navbar navbar-inverse">
-			{{>footer}}
-		</div>
+		
+		{{>footer}}
 		
 		{{>js}}
 
