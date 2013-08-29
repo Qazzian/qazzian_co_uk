@@ -6,7 +6,9 @@ bootstrap: node_modules
 	@echo "\nBuilding Assets..."
 	@mkdir ./tmp
 	@cp -r ${BOOTSTRAP}* ./tmp/
+	{{#bootstrapVariablesFile}}
 	@cp {{{bootstrapVariablesFile}}} ./tmp/less/variables.less
+	{{/bootstrapVariablesFile}}
 	{{#extraLessFiles}}
 	@cp {{{dir}}}/{{{file}}} ./tmp/less/{{{file}}}
 	@echo "\n@import \"{{{file}}}\";" >> ./tmp/less/bootstrap.less 
