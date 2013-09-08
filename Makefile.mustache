@@ -14,9 +14,9 @@ bootstrap: node_modules
 	@echo "\n@import \"{{{file}}}\";" >> ./tmp/less/bootstrap.less 
 	{{/extraLessFiles}}
 	
-	@cd ./tmp; ln -s ../node_modules; make bootstrap
+	@cd ./tmp; ln -s ../node_modules; grunt dist;
 	@mkdir -p ./build/assets
-	@cp -R ./tmp/bootstrap/* ./build/assets
+	@cp -R ./tmp/dist/* ./build/assets
 
 # TODO change so we're not running the tests anymore. But don't want to run index.js either as that will re-run make
 html: node_modules
