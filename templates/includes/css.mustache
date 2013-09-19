@@ -1,4 +1,6 @@
-<link rel="stylesheet" href="{{config.assetRoot}}/css/bootstrap.min.css" />
+{{^config.useLess}}
+	<link rel="stylesheet" href="{{config.assetRoot}}/css/bootstrap.css" />
+{{/config.useLess}}
 <!-- site wide specific styles -->
 {{#config.css}}
 	<link rel="stylesheet" href="{{config.assetRoot}}{{.}}" />

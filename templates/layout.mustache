@@ -17,6 +17,10 @@
 		</script>
 
 		<!-- styles -->
+
+		{{#config.useLess}}
+			{{>less}}
+		{{/config.useLess}}
 		{{>css}}
 
 		<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
