@@ -1,17 +1,11 @@
-<div class="jumbotron masthead">
-  <p class="lead">Hi I'm Qazzian.</p>
-  <p class="lead">Here you can find out more about me and some of the projects I've been working on.</p>
+<p class="lead">Hi I'm Qazzian.</p>
+<p class="lead">Here you can find out more about me and some of the projects I've been working on.</p>
 
-  <h2>Top Projects</h2>
+<h2>Top Projects</h2>
 
-  {{#pageIndex.projects.children}}
-    <article>
-      <h3><A href="{{url}}">{{title}}</a></h3>
-      <p>{{description}}</p>
-    </article>
-  {{/pageIndex.projects.children}}
-
-
-</div>
-
-
+{{#pageIndex.projects.children}}
+<article>
+  <h3><A href="{{url}}">{{title}}</a></h3>
+  <p>{{description}}</p>
+</article>
+{{/pageIndex.projects.children}}

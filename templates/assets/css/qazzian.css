@@ -2,6 +2,10 @@
 	font-size: small;
 }
 
+.jumbotron {
+	border-radius: 6px;
+}
+
 
 .footer {
 	margin-top: 2em;
@@ -10,6 +14,7 @@
 }
 .footer p {
 	margin: 0;
+	padding: 0 5px;
 }
 
 .copyright{
