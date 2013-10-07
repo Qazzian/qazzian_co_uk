@@ -15,7 +15,7 @@ bootstrap: node_modules
 	@echo "\n@import \"{{{file}}}\";" >> ./tmp/less/bootstrap.less 
 	{{/extraLessFiles}}
 	
-	@cd ./tmp; ln -s ../node_modules; grunt dist;
+	@cd ./tmp; ln -s ../node_modules; npm install; grunt dist;
 	@mkdir -p ./build/assets/less
 	@cp -R ./tmp/dist/* ./build/assets
 	@cp -R ./tmp/less/* ./build/assets/less
@@ -38,6 +38,9 @@ clean:
 node_modules:
 	npm install
 
+# TODO need to depend on the same modules as bootstrap
+# need to patch node_modules/grunt-recess/tasks/recess.js lin 69 with 
+# if (!data.forEach) { data = [data]; }
 
 .PHONY: build
 
