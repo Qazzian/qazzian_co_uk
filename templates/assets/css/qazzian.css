@@ -16,13 +16,16 @@
 	margin: 0;
 	padding: 0 5px;
 }
+.footer .row {
+	margin: 0;
+}
 
 .copyright{
-	float: left;
+	
 }
 .license {
 	text-align: center;
 }
 .build-time {
-	float: right;
+	text-align: right;
 }
