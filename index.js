@@ -37,12 +37,39 @@ function renderMakeFile() {
 }
 
 function processBootstrapOptions(context){
+
+	function resolvePath(filePath){
+		var file = path.resolve(filePath);
+		console.log("Resolved path " + filePath + " to " + file);
+		if (!fs.existsSync(file)) {
+			file = '';
+		}
+
+		return file;
+	}
+
 	if (context.bootswatchTheme){
 		context.bootstrapVariablesFile = path.join(__dirname, BOOSTWATCH_DIR, context.bootswatchTheme, 'variables.less');
 		context.extraLessFiles = [{
 			dir: path.join(__dirname, BOOSTWATCH_DIR, context.bootswatchTheme),
 			file: 'bootswatch.less'
 		}];
+	}
+	else {
+		var tmpPath = '';
+		if (context.bootstrapVariablesFile) {
+			context.bootstrapVariablesFile = resolvePath(context.bootstrapVariablesFile);
+		}
+		if (context.extraLessFiles && context.extraLessFiles.length > 0) {
+			for (var i=0; i<context.extraLessFiles.length; i++) {
+				tmpPath = resolvePath(context.extraLessFiles[i]);
+				context.extraLessFiles[i] = {
+					dir: path.dirname(tmpPath),
+					file: path.basename(tmpPath)
+				};
+			}
+
+		}
 	}
 
 	return context;

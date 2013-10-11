@@ -3,9 +3,9 @@
 	"contact": "ian@qazzian.co.uk",
 	"defaultHome": "index",
 
-	"bootswatchTheme": "slate",
-	"bootstrapVariablesFile" : "",
-	"extraLessFiles" : [],
+	"bootswatchTheme": "",
+	"bootstrapVariablesFile" : "./templates/bootstrapThemes/colouredSlate/variables.less",
+	"extraLessFiles" : ["./templates/bootstrapThemes/colouredSlate/bootswatch.less"],
 	"buildPath": "build",
 	"assetRoot": "/assets",
 
