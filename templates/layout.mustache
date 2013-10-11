@@ -11,8 +11,8 @@
 		<meta name="author" content="{{config.contact}}">
 
 		<script type="text/javascript">
-			if (!location.hostname.match(/qazzian\.com?(\.uk)?/)) {
-				location.reload();
+			if (!location.hostname.match(/qazzian\.com?(\.uk)?/) && !location.search.match('noredirect=1')) {
+				location.search = 'noredirect=1';
 			}
 		</script>
 
