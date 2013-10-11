@@ -1,10 +1,6 @@
-<ul class="list-unstyled list-group">
 	{{#page.children}}
-	<li>
-		<article class="list-group-item">
-			<h3><a href="{{url}}">{{pageName}}</a></h3>
-			<p class="">{{description}}</p>
+		<article class="panel panel-default">
+			<h3 class="panel-heading"><a href="{{url}}">{{pageName}}</a></h3>
+			<p class="panel-body">{{description}}</p>
 		</article>
-	</li>
 	{{/page.children}}
-</ul>

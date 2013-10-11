@@ -1,3 +1,8 @@
+/* so that we can have header elements as the panel heading */
+.panel-heading {
+	margin: 0;
+}
+
 .small-print {
 	font-size: small;
 }
@@ -17,9 +22,6 @@
 	margin: 0;
 }
 
-.copyright{
-	
-}
 .license {
 	text-align: center;
 }
