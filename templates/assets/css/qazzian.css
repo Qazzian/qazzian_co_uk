@@ -10,11 +10,8 @@
 .footer {
 	margin-top: 2em;
 	min-height: 0;
-	padding-top: 1ex;
-}
-.footer p {
-	margin: 0;
 	padding: 0 5px;
+	margin-bottom: 0;
 }
 .footer .row {
 	margin: 0;
