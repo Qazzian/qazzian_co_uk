@@ -40,7 +40,6 @@ function processBootstrapOptions(context){
 
 	function resolvePath(filePath){
 		var file = path.resolve(filePath);
-		console.log("Resolved path " + filePath + " to " + file);
 		if (!fs.existsSync(file)) {
 			file = '';
 		}
