@@ -36,7 +36,7 @@
 // Links
 // -------------------------
 
-@link-color:            @brand-primary; //#86C1CF;
+@link-color:            #937CC2;
 @link-hover-color:      lighten(@link-color, 10%);
 
 // Typography
@@ -242,7 +242,7 @@
 @navbar-height:                    50px;
 @navbar-margin-bottom:             @line-height-computed;
 @navbar-default-color:             @text-color;
-@navbar-default-bg:                @gray-dark;
+@navbar-default-bg:                @brand-primary;
 @navbar-default-border:            darken(@navbar-default-bg, 6.5%);
 @navbar-border-radius:             @border-radius-base;
 @navbar-padding-horizontal:        floor(@grid-gutter-width / 2);
@@ -357,7 +357,7 @@
 
 @jumbotron-padding:              30px;
 @jumbotron-color:                inherit;
-@jumbotron-bg:                   darken(@body-bg, 5%);
+@jumbotron-bg:                   darken(@body-bg, 10%);
 
 @jumbotron-heading-color:        inherit;
 
@@ -491,14 +491,14 @@
 
 // Panels
 // -------------------------
-@panel-bg:                    lighten(@body-bg, 3%);
+@panel-bg:                    darken(@body-bg, 3%);
 @panel-inner-border:          rgba(0, 0, 0, 0.6);
 @panel-border-radius:         @border-radius-base;
 @panel-footer-bg:             @panel-default-heading-bg;
 
 @panel-default-text:          @text-color;
 @panel-default-border:        rgba(0, 0, 0, 0.6);
-@panel-default-heading-bg:    lighten(@body-bg, 10%);
+@panel-default-heading-bg:    darken(@body-bg, 10%);
 
 @panel-primary-text:          #fff;
 @panel-primary-border:        @panel-default-border;
