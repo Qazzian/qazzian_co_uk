@@ -2,5 +2,14 @@
 		<article class="panel panel-default">
 			<h3 class="panel-heading"><a href="{{url}}">{{pageName}}</a></h3>
 			<p class="panel-body">{{description}}</p>
+			{{#userData}}
+				<p>
+					<ul class="social-links">
+						{{#url}}<li><a class="external-link" href="{{url}}">View Site</a>{{/url}}
+						{{#git}}<li><a class="git-link" href="{{git}}">github</a>{{/git}}
+					</ul>
+				</p>
+			{{/userData}}
+			<p></p>
 		</article>
 	{{/page.children}}

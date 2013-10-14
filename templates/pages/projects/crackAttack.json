@@ -4,5 +4,9 @@
 	"description": "A simple game based on Tetris Attack by Nintendo. This is a HTML based remake of an already exisiting opensource game.",
 	"keywords": "Crack Attack Tetris game html javascript multiplayer",
 	"css": [],
-	"js": []
+	"js": [],
+	"userData" : {
+		"git": "http://github.com/Qazzian/Crack-Attack",
+		"url": "/crack-attack"
+	}
 }
