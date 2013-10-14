@@ -1,7 +1,7 @@
 BOOTSTRAP = ./subModules/bootstrap/
 
 # Build the static site
-build: clean bootstrap html siteAssets
+build: clean bootstrap html assets
 
 bootstrap: node_modules
 	@echo "\nBuilding Assets..."
@@ -26,7 +26,7 @@ html: node_modules
 	@echo "\nBuild HTML..."
 	@node ./lib/run.js
 
-siteAssets: 
+assets: 
 	@echo "\nCopy site specific assets..."
 	@rsync -a templates/assets/ build/assets/
 
