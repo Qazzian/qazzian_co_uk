@@ -2,5 +2,27 @@
 	"pageName": "About",
 	"title": "About",
 	"css": [],
-	"js": []
+	"js": [],
+
+	"roles": [
+		{
+			"title": "Senior Frontend Developer",
+			"Company": "Loveholidays.com",
+			"url": "http://www.loveholidays.com",
+			"startDate": "2013-01",
+			"endDate": "current",
+			"description": "TODO",
+			"Core skills": ["Javascript", "jQuery", "require.js", "AMD", 
+				"qUnit", "css", "sass", "HTML5", "cross browser development", "Python", "Django", "MVC testing" ]
+		},
+		{
+			"title": "Platform Developer",
+			"Company": "Grapple Mobile (Now called Monetis Create)",
+			"url": "http://www.monitiscreate.com",
+			"startDate": "",
+			"endDate": "2012-12",
+			"description": "TODO",
+			"Core skills": ["Javascript", "css", "HTML5", "Mobile development", "responsive design", "cross platform development" ]
+		}
+	]
 }
