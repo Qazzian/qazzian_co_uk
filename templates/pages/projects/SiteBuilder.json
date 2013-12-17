@@ -1,7 +1,10 @@
 {
 	"pageName": "Site Builder",
 	"title": "Site Builder",
-	"description": "A simple CMS type system for generating static websites using boostrap and bootswatch. This site has been built with it.",
+	"description": "A simple CMS written with nodejs for generating static websites using a boostrap template. Used to generate the content of this site.",
 	"css": [],
-	"js": []
+	"js": [],
+	"userData" : {
+		"git": "http://github.com/Qazzian/qazzian_co_uk"
+	}
 }

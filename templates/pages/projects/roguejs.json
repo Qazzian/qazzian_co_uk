@@ -1,0 +1,12 @@
+{
+	"pageName": "Rogue js",
+	"title": "Rogue js",
+	"description": "A remake of Rogue in html and javascript. This is still in the early stages of development",
+	"keywords": "Rogue, dungeon crawler, RPG",
+	"css": [],
+	"js": [],
+	"userData" : {
+		"git": "http://github.com/Qazzian/roguejs",
+		"url": "/roguejs/"
+	}
+}
