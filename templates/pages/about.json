@@ -4,20 +4,27 @@
 	"css": [],
 	"js": [],
 
+	"links": {
+		"github": "http://github.com/Qazzian",
+		"stackoverflow": "",
+		"blog": "http://qazzian.co.uk",
+		"linkedin": ""
+	},
+
 	"roles": [
 		{
-			"title": "Senior Frontend Developer",
-			"Company": "Loveholidays.com",
+			"title": "Frontend Developer",
+			"company": "loveholidays.com",
 			"url": "http://www.loveholidays.com",
 			"startDate": "2013-01",
-			"endDate": "current",
+			"endDate": "",
 			"description": "TODO",
-			"Core skills": ["Javascript", "jQuery", "require.js", "AMD", 
+			"coreSkills": ["Javascript", "jQuery", "require.js", "AMD", 
 				"qUnit", "css", "sass", "HTML5", "cross browser development", "Python", "Django", "MVC testing" ]
 		},
 		{
 			"title": "Platform Developer",
-			"Company": "Grapple Mobile (Now called Monetis Create)",
+			"company": "Grapple Mobile (Now called Monetis Create)",
 			"url": "http://www.monitiscreate.com",
 			"startDate": "",
 			"endDate": "2012-12",

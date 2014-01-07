@@ -4,20 +4,24 @@
 	<p>Could be worth putting some of this in the page config so that it's accessable to other pages.</p>
 </div>
 
-<article class="panel panel-default">
-	<h3 class="panel-heading"><a href="{{url}}">Current role</a></h3>
-	<p class="panel-body">description</p>
-</article>
+{{#page.roles}}
+	<article class="panel panel-default">
+		<h3 class="panel-heading"><a href="{{url}}">{{company}}</a></h3>
+		<div class="panel-body">
+			<p>
+				<strong>{{title}}</strong>
+				<span class="role-date">
+					{{startDate}} - {{#endDate}}{{endDate}}{{/endDate}}{{^endDate}}Current{{/endDate}}
+				</span>
+			</p>
+			{{#coreSkills.length}}
+			<p>Sills used: {{#coreSkills}}{{.}}, {{/coreSkills}}</p>
+			{{/coreSkills.length}}
+			<p>{{description}}</p>
+		</div>
+	</article>
 
-<article class="panel panel-default">
-	<h3 class="panel-heading"><a href="{{url}}">Past role 1</a></h3>
-	<p class="panel-body">description</p>
-</article>
-
-<article class="panel panel-default">
-	<h3 class="panel-heading"><a href="{{url}}">Past role 2</a></h3>
-	<p class="panel-body">description</p>
-</article>
+{{/page.roles}}
 
 <article class="panel panel-default">
 	<h3 class="panel-heading"><a href="{{url}}">Education</a></h3>
