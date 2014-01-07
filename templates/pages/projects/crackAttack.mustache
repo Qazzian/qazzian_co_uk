@@ -1,5 +1,34 @@
-Crack Attack
+<h2>{{page.title}}</h2>
 
 <p>{{page.description}}</p>
+
+{{#page.userData}}
+	<p>
+		<ul class="social-links">
+			{{#url}}<li><a class="external-link" href="{{url}}">View Site</a>{{/url}}
+			{{#git}}<li><a class="git-link" href="{{git}}">github</a>{{/git}}
+		</ul>
+	</p>
+{{/page.userData}}
+
+<h3>How to play</h3>
+<p>
+	The aim of the game is to last longer than your opponant. 
+	You have a tetris like playing board with coloured blocks riseing from the bottom.
+	You have to swap blocks round to make groups of 3 or more of the same colour, which are then removed from the board.
+	If the group is large enough then junk blocks are sent to your opponant which fall from the top of the screen, making
+	their pile of blocks taller.
+	A player losses the game when their tower of blocks goes past the top of te screen.
+</p>
+<p>
+	There is a single player element as well where you aim to get the best score possible, and garbage blocks are sent to your self.
+</p>
+<p>
+	Move the cursor with the arrow keys and use space to swap the selected blocks around. You can only swap left to right.
+</p>
+
+<h3></h3>
+
+
 
 {{! http://www.aluminumangel.org/attack/ }}
