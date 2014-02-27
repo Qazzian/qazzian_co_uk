@@ -20,4 +20,16 @@ To access the variable from the templates use {{config.VAR_NAME}}
 Once these have been setup run node index.js to build the site
 The compiled site will be saved in the build/ dir
 
+= TODO
 
+For my site
+Fill in personal bio data
+Set up links to external sites
+	github, linkedin, blog, etc
+
+Fill in current and past jobs
+	loveholidays, Grapple, Photobox, council
+	start & end dates, position, brief description of the roll
+
+Setup a sitemap file & add it to robots.txt
+Setup a way of moving 'other' assets into various directories like robots.txt, fav.ico etc

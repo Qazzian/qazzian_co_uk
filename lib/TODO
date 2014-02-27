@@ -1,0 +1,62 @@
+
+
+= Backend
+
+- mongodb with pre loaded data.
+- create install script which will load the constituancy data from the doanloaded csv files
+
+- express frontend sever with middleware modules
+-- load static files
+-- handle post requests for the vote counts
+
+= frontend
+
+- searchable lists - look for a jquery plugin
+
+== page structure
+
+- home
+-- how are you going to vote?
+-- have submission form
+-- show global party summary on the right
+- form
+-- area dropdown
+-- are you voting? radio buttons
+--- if yes show party dropdown (default)
+--- else hide party dropdown
+-- party dropdown
+-- validation
+--- if yes then check that a party is selected.
+--- otherwise let the form continue as a 'not voting' record.
+
+
+
+= data model
+
+- constiuancies
+-- id,
+-- name,
+-- current-party?
+-- meta
+Create an 'unkown' area first for users who want to keep this annonymous.
+If possible always present 'unkown' before the other areas.
+
+- parties
+-- name
+-- id
+-- meta data
+Create parties for the main UK parties that get in the news.
+Create an 'others' party first. If possible present it last in the list.
+
+
+For vote counts, record by area then add them up for the uk wide count.
+
+- vote-counts
+-- area-id
+-- party-id
+-- vote-count
+
+- is-voting-counts
+-- area-id
+-- yes/no
+-- count
