@@ -12,9 +12,9 @@ bootstrap: node_modules
 	{{/bootstrapVariablesFile}}
 	{{#extraLessFiles}}
 	@cp {{{dir}}}/{{{file}}} ./tmp/less/{{{file}}}
-	@echo "\n@import \"{{{file}}}\";" >> ./tmp/less/bootstrap.less 
+	@echo "\n@import \"{{{file}}}\";" >> ./tmp/less/bootstrap.less
 	{{/extraLessFiles}}
-	
+
 	@cd ./tmp; ln -s ../node_modules; npm install; grunt dist;
 	@mkdir -p ./build/assets/less
 	@cp -R ./tmp/dist/* ./build/assets
@@ -26,9 +26,10 @@ html: node_modules
 	@echo "\nBuild HTML..."
 	@node ./lib/run.js
 
-assets: 
+assets:
 	@echo "\nCopy site specific assets..."
 	@rsync -a templates/assets/ build/assets/
+	@rsync -a templates/other/ build/
 
 clean:
 	@echo "\nDelete previous build"
@@ -39,7 +40,7 @@ node_modules:
 	npm install
 
 # TODO need to depend on the same modules as bootstrap
-# need to patch node_modules/grunt-recess/tasks/recess.js lin 69 with 
+# need to patch node_modules/grunt-recess/tasks/recess.js lin 69 with
 # if (!data.forEach) { data = [data]; }
 
 .PHONY: build
