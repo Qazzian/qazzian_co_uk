@@ -18,18 +18,36 @@
 			"url": "http://www.loveholidays.com",
 			"startDate": "2013-01",
 			"endDate": "",
-			"description": "TODO",
+			"description": "My main responsibilities are to implement new designs in HTML, CSS, Javascript and python, maintain existing code, fixing bugs. The codebase has suffered from having a number of short term contractors and an ongoing task is to refactor and unify the existing frontend code. I've recently been converting or replacing the existing javascript modules from a global name-spaced system to an AMD system. I've started moving the css into scss based templates and I've also introduced client side unit tests and a style guide.",
 			"coreSkills": ["Javascript", "jQuery", "require.js", "AMD", 
 				"qUnit", "css", "sass", "HTML5", "cross browser development", "Python", "Django", "MVC testing" ]
 		},
-		{
-			"title": "Platform Developer",
-			"company": "Grapple Mobile (Now called Monetis Create)",
-			"url": "http://www.monitiscreate.com",
-			"startDate": "",
-			"endDate": "2012-12",
-			"description": "TODO",
-			"Core skills": ["Javascript", "css", "HTML5", "Mobile development", "responsive design", "cross platform development" ]
-		}
+        {
+            "title": "Platform Developer",
+            "company": "Grapple Mobile (Now called Monetis Create)",
+            "url": "http://www.monitiscreate.com",
+            "startDate": "2011-07",
+            "endDate": "2012-12",
+            "description": "Built and maintained cross platform mobile phone applications, using html5, css3 and javascript, compiled with a proprietary framework to run on iPhone, Android, J2ME based devices, and WebWorks for Blackberry.  I was responsible for building an internal analytics analysis tool, built on node.js and backbone.js. The system would import data from a third party analytics provider, and compile the data so that we could compare user statistics between applications, device types and groups of apps over a dynamically selected period of time. I was instrumental in moving the company from SVN to GIT source control by helping other developers understand the concepts of good source control management, using the git command line interface, and writing a shell script to port our existing repositories.",
+            "Core skills": ["Javascript", "css", "HTML5", "Mobile development", "responsive design", "cross platform development" ]
+        },
+        {
+            "title": "Frontend Features Developer",
+            "company": "Photobox",
+            "url": "http://www.Photobox.com",
+            "startDate": "2007-02",
+            "endDate": "2011-06",
+            "description": "My core responsibility was implementing new requirements and designs to a high standard for the Photobox website.  Working with a fast turnaround, I made use of the core Internet technologies XHTML, CSS 3 and JavaScript with appropriate libraries such as jQuery. I used the Mason Perl framework to build HTML templates and process the business logic that makes up the pages. Source control was handled by a central svn repository, in which I would create project branches for merging into an integrated trunk branch after QA testing. Other responsibilities included release management to the live servers, working with product owners and designers to produce Rich Internet Applications that meet W3C functional and usability standards (as defined by the WIA and WCAG working groups).  I have had professional training in advanced Perl development, scrum practices, HTML5 and CSS 3.",
+            "Core skills": ["Javascript", "css", "HTML5", "Mobile development", "responsive design", "cross platform development" ]
+        },
+        {
+            "title": "GIS Web Developer",
+            "company": "Hertfordshire County Council",
+            "url": "http://www.hertsdirect.org/maps/Website/WebMaps/default.htm",
+            "startDate": "2006-02",
+            "endDate": "2007-02",
+            "description": "One year contract to develop a replacement online interactive map based on ESRI’s ArcIMS architecture. To meet current internet development and accessibility standards as well as user needs, a new viewer was developed from scratch.  This relied on AJAX patterns to communicate with the ArcIMS server, enabling us to dispense with the standard frame based and inaccessible viewer that comes with ArcIMS and structure the web page with XHTML and CSS, leaving all the interface implementation with JavaScript.",
+            "Core skills": ["Javascript", "css", "HTML5", "Mobile development", "responsive design", "cross platform development" ]
+        }
 	]
 }
