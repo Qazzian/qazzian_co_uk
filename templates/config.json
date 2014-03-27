@@ -14,8 +14,7 @@
 
 	"javascript": [],
 	"css": [
-		"/css/bootswatch_amends.css",
-		"/css/qazzian.css"
+		"/css/manifest.css"
 	],
 	"useLess": false
 }
