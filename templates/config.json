@@ -6,7 +6,7 @@
 	"bootswatchTheme": "",
 	"bootstrapVariablesFile" : "./templates/bootstrapThemes/colouredSlate/variables.less",
 	"extraLessFiles" : ["./templates/bootstrapThemes/colouredSlate/bootswatch.less"],
-	"buildPath": "build",
+	"buildPath": "dist",
 	"assetRoot": "/assets",
 
 	"description": "Qazzian's personal website, CV and portfolio.",

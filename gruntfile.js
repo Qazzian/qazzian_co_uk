@@ -66,10 +66,10 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-contrib-less');
 
-	grunt.loadTasks('grunt/bower-deps.js');
+	grunt.loadTasks('grunt');
 
 
 	grunt.registerTask('collectDeps', ['copy']);
 
-	grunt.registerTask('default', ['clean', 'collectDeps', 'less']);
+	grunt.registerTask('default', ['clean', 'collectDeps', 'less', 'cmsBuildHtml']);
 };
