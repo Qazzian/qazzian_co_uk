@@ -9,28 +9,22 @@
   "repository": {
     "type": "git"
   },
-  "dependencies": {
-    "connect": "2.1.3",
-    "hogan.js": "2.0.0",
-    "jshint": "0.9.1",
-    "less": "~ 1.3.3",
-    "mustache": "latest",
-    "recess": "1.1.6",
-    "uglify-js": "1.3.4",
-    "underscore": "latest"
-  },
+  "dependencies": {},
   "scripts": {
-    "start": "index.js"
+    "start": "server.js",
+    "prepublish": "node_modules/.bin/bower install"
   },
   "engines": {
     "node": "0.8.x"
   },
   "devDependencies": {
-    "grunt": "^0.4.3",
-    "grunt-include-bootstrap": "^0.1.1",
-    "grunt-contrib-less": "^0.10.0",
-    "grunt-contrib-copy": "^0.5.0",
-    "grunt-contrib-clean": "^0.5.0",
-    "node-static": "^0.7.3"
+		"bower": "^1.3.1",
+		"grunt": "^0.4.3",
+		"grunt-contrib-less": "^0.10.0",
+		"grunt-contrib-copy": "^0.5.0",
+		"grunt-contrib-clean": "^0.5.0",
+		"mustache": "latest",
+		"node-static": "^0.7.3",
+		"underscore": "^1.6.0"
   }
 }
