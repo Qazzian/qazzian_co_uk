@@ -1,4 +1,4 @@
-= Site Builder
+# Site Builder
 
 First define your site content by adding musteache html templates to the templates/pages directory
 
@@ -20,7 +20,7 @@ To access the variable from the templates use {{config.VAR_NAME}}
 Once these have been setup run node index.js to build the site
 The compiled site will be saved in the build/ dir
 
-= TODO
+# TODO
 
 For my site
 Fill in personal bio data
