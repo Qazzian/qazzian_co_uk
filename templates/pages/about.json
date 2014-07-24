@@ -12,16 +12,26 @@
 	},
 
 	"roles": [
-		{
-			"title": "Frontend Developer",
-			"company": "loveholidays.com",
-			"url": "http://www.loveholidays.com",
-			"startDate": "2013-01",
-			"endDate": "",
-			"description": "My main responsibilities are to implement new designs in HTML, CSS, Javascript and python, maintain existing code, fixing bugs. The codebase has suffered from having a number of short term contractors and an ongoing task is to refactor and unify the existing frontend code. I've recently been converting or replacing the existing javascript modules from a global name-spaced system to an AMD system. I've started moving the css into scss based templates and I've also introduced client side unit tests and a style guide.",
-			"coreSkills": ["Javascript", "jQuery", "require.js", "AMD", 
-				"qUnit", "css", "sass", "HTML5", "cross browser development", "Python", "Django", "MVC testing" ]
-		},
+        {
+            "title": "Mobile Web Developer",
+            "company": "ink-global.com",
+            "url": "http://www.ink-global.com",
+            "startDate": "2014-04",
+            "endDate": "",
+            "description": "Building mobile websites for the airline industry",
+            "coreSkills": ["Javascript", "jQuery", "Durandle.js", "knockout.js", "require.js", "AMD",
+                "nodejs", "grunt", "jasmine", "css", "less", "HTML5", "cross browser development", "MVC testing" ]
+        },
+        {
+            "title": "Frontend Developer",
+            "company": "loveholidays.com",
+            "url": "http://www.loveholidays.com",
+            "startDate": "2013-01",
+            "endDate": "2014-04",
+            "description": "My main responsibilities are to implement new designs in HTML, CSS, Javascript and python, maintain existing code, fixing bugs. The codebase has suffered from having a number of short term contractors and an ongoing task is to refactor and unify the existing frontend code. I've recently been converting or replacing the existing javascript modules from a global name-spaced system to an AMD system. I've started moving the css into scss based templates and I've also introduced client side unit tests and a style guide.",
+            "coreSkills": ["Javascript", "jQuery", "require.js", "AMD",
+                "qUnit", "css", "sass", "HTML5", "cross browser development", "Python", "Django", "MVC testing" ]
+        },
         {
             "title": "Platform Developer",
             "company": "Grapple Mobile (Now called Monetise Create)",
