@@ -18,13 +18,14 @@
     "node": "0.8.x"
   },
   "devDependencies": {
-		"bower": "^1.3.1",
-		"grunt": "^0.4.3",
-		"grunt-contrib-less": "^0.10.0",
-		"grunt-contrib-copy": "^0.5.0",
-		"grunt-contrib-clean": "^0.5.0",
-		"mustache": "latest",
-		"node-static": "^0.7.3",
-		"underscore": "^1.6.0"
+    "bower": "^1.3.1",
+    "grunt": "^0.4.3",
+    "grunt-contrib-clean": "^0.5.0",
+    "grunt-contrib-connect": "~0.7.1",
+    "grunt-contrib-copy": "^0.5.0",
+    "grunt-contrib-less": "^0.10.0",
+    "mustache": "latest",
+    "node-static": "^0.7.3",
+    "underscore": "^1.6.0"
   }
 }
