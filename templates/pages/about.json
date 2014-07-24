@@ -24,8 +24,8 @@
 		},
         {
             "title": "Platform Developer",
-            "company": "Grapple Mobile (Now called Monetis Create)",
-            "url": "http://www.monitiscreate.com",
+            "company": "Grapple Mobile (Now called Monetise Create)",
+            "url": "http://monitisecreate.com/",
             "startDate": "2011-07",
             "endDate": "2012-12",
             "description": "Built and maintained cross platform mobile phone applications, using html5, css3 and javascript, compiled with a proprietary framework to run on iPhone, Android, J2ME based devices, and WebWorks for Blackberry.  I was responsible for building an internal analytics analysis tool, built on node.js and backbone.js. The system would import data from a third party analytics provider, and compile the data so that we could compare user statistics between applications, device types and groups of apps over a dynamically selected period of time. I was instrumental in moving the company from SVN to GIT source control by helping other developers understand the concepts of good source control management, using the git command line interface, and writing a shell script to port our existing repositories.",
