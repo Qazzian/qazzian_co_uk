@@ -1,0 +1,192 @@
+// FLEX BOXES
+// --------------------------------------------------
+
+
+/**
+ * Flex Items
+ */
+
+.flex(@value: 0) {
+  -webkit-box-flex: @value;
+  -moz-box-flex: @value;
+  -webkit-flex: @value;
+  -ms-flex: @value;
+  flex: @value;
+}
+
+// Only use this if you need the shrink and basis options as older browsers choke on the defaults.
+.flex2(@value: 0, @flex-shrink: 1, @flex-basis: auto) {
+  -webkit-flex-grow: @value;
+  -webkit-flex-shrink: @flex-shrink;
+  -webkit-flex-basis: @flex-basis;
+  -moz-box-flex: @value;
+  -webkit-flex: @value @flex-shrink @flex-basis;
+  -ms-flex: @value @flex-shrink @flex-basis;
+  flex: @value @flex-shrink @flex-basis;
+}
+
+/**
+ * flex box
+ */
+
+.flex-mixin(@dir:row, @alignment: stretch) {
+  .flex-box();
+  .flex-direction(@dir);
+  .flex-box-align-items(@alignment)
+}
+
+
+.flex-box() {
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -moz-box;
+  display: flex;
+}
+
+
+/**  Flex box direction **/
+.flex-direction(@dir) when (@dir = row) {
+  .flex-direction-row();
+}
+.flex-direction(@dir) when (@dir = column) {
+  .flex-direction-col();
+}
+.flex-direction(@dir) when (@dir = row-reverse) {
+  .flex-direction-row-reverse();
+}
+.flex-direction(@dir) when (@dir = column-reverse) {
+  .flex-direction-col-reverse();
+}
+// legacy values
+.flex-direction(@dir) when (@dir = horizontal) {
+  .flex-direction-row();
+}
+.flex-direction(@dir) when (@dir = vertical) {
+  .flex-direction-col();
+}
+
+
+.flex-direction-row(){
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.flex-direction-row-reverse() {
+  -webkit-box-direction: reverse;
+  -moz-box-direction: reverse;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+
+.flex-direction-col(){
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+
+}
+.flex-direction-col-reverse(){
+  -webkit-box-direction: reverse;
+  -moz-box-direction: reverse;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -webkit-flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+}
+
+/**  Flex box alignment **/
+
+.flex-box-align-items(@alignment) when (@alignment = flex-start), (@alignment = start) {
+  -webkit-box-align: start;
+  -moz-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+.flex-box-align-items(@alignment) when (@alignment = flex-end), (@alignment = end) {
+  -webkit-box-align: end;
+  -moz-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+
+
+.flex-box-align-items(@alignment) when (default()) {
+  // for values of center, baseline and stretch
+  -webkit-align-items: @alignment;
+  -webkit-flex-align: @alignment;
+  -webkit-box-align: @alignment;
+  -ms-flex-align: @alignment;
+  align-items: @alignment;
+}
+
+/**  Flex box justify content **/
+
+.flex-box-justify(@justify) when (@justify = flex-start), (@justify = start) {
+  -webkit-box-pack: start;
+  -moz-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+.flex-box-justify(@justify) when (@justify = flex-end), (@justify = end) {
+  -webkit-box-pack: end;
+  -moz-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+.flex-box-justify(@justify) when (@justify = space-around) {
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+.flex-box-justify(@justify) when (@justify = space-between) {
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.flex-box-justify(@justify) when (@justify = center), (default()) {
+  -webkit-box-pack: @justify;
+  -moz-box-pack: @justify;
+  -webkit-justify-content: @justify;
+  -ms-flex-pack: @justify;
+  justify-content: @justify;
+}
+
+/**  Flex Item alignment **/
+
+.flex-item-align-self(@alignment) when (@alignment = flex-start) {
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+.flex-item-align-self(@alignment) when (@alignment = flex-end) {
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+}
+.flex-item-align-self(@alignment) when (default()) {
+  // auto, center, baseline and stretch
+  -webkit-align-self: @alignment;
+  -ms-flex-item-align: @alignment;
+  align-self: @alignment;
+}

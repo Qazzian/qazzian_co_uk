@@ -1,12 +1,33 @@
-/* For testing without an internet connection */
-@font-face {
-  font-family: 'Oswald';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Oswald Regular'), local('Oswald-Regular'), url(../fonts/Oswald.woff) format('woff');
-}
+@import './bootstrapThemes/colouredSlate/flex';
 
-/*.nav > .active > a {
-	color: rgba(223, 186, 164, 1);
-	text-shadow: -2px 2px 0 rgba(145, 118, 102, 1);
-}*/
+.footer {
+
+
+
+  .flex-mixin(column);
+
+
+  .row {
+	.flex(1);
+	.flex-mixin(column);
+	text-align: center;
+
+	.footer-section {
+	  .flex(1);
+	}
+
+	@media (min-width: 550px) {
+	  .flex-mixin();
+
+	  .footer-section:first-of-type {
+		text-align: left;
+	  }
+	  .footer-section:last-of-type {
+		text-align: right;
+	  }
+	}
+  }
+
+
+
+}

@@ -1,18 +1,20 @@
 <!-- Footer ================================================== -->
-<footer class="container footer navbar navbar-inverse" role="navigation">
+<footer class="footer navbar navbar-inverse" role="navigation">
 	<div class="row">
-		<ul class="list-inline footer-links col-md-6">
-			<li><a class="navbar-link" href="http://www.qazzian.co.uk">Blog</a></li>
-			<li><a class="navbar-link" href="http://www.github.com/qazzian">Github</a></li>
-			<li><a class="navbar-link" href="http://www.twitter.com/qazzian">Twitter</a></li>
-		</ul>
-		<p class="col-md-6 text-right">
+		<section class="footer-section">
+			<ul class="list-inline footer-links">
+				<li><a class="navbar-link" href="http://www.qazzian.co.uk">Blog</a></li>
+				<li><a class="navbar-link" href="http://www.github.com/qazzian">Github</a></li>
+				<li><a class="navbar-link" href="http://www.twitter.com/qazzian">Twitter</a></li>
+			</ul>
+		</section>
+		<section class="footer-section">
 			Built with <a class="navbar-link" href="http://twitter.github.com/bootstrap">Bootstrap</a> &amp; <a class="navbar-link" href="http://www.bootswatch.com">bootswatch</a>
-		</p>
+		</section>
 	</div>
-	<div class="row">
-		<p class="col-md-4 small-print copyright muted">Copyright Qazzian</p>
-		<p class="col-md-4 small-print license muted">This site is private to me</p>
-		<p class="col-md-4 build-time muted small-print ">  Built: {{buildTime}}</p>
+	<div class="row small-print muted">
+		<section class="footer-section copyright">Copyright Qazzian</section>
+		<section class="footer-section license">This site is private to me</section>
+		<section class="footer-section build-time ">  Built: {{buildTime}}</section>
 	</div>
 </footer>
