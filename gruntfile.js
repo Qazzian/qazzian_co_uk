@@ -19,11 +19,11 @@ module.exports = function (grunt) {
 		},
 
 		copy: {
+			config: {
+				encoding: 'utf8',
+				filter: 'isFile'
+			},
 			bowerDeps: {
-				config: {
-					encoding: 'utf8',
-					filter: 'isFile'
-				},
 				files: [
 					{
 						expand: true,
@@ -42,15 +42,24 @@ module.exports = function (grunt) {
 				]
 			},
 			assets: {
-				config: {
-					encoding: 'utf8',
-					filter: 'isFile'
-				},
 				files: [
 					{
 						expand: true,
 						cwd: 'templates/',
-						src: 'assets/**',
+						src: [
+							'assets/**',
+							'!assets/root/**'
+						],
+						dest: 'dist'
+					}
+				]
+			},
+			rootAssets: {
+				files: [
+					{
+						expand: true,
+						cwd: 'templates/assets/root/',
+						src: '**',
 						dest: 'dist'
 					}
 				]
