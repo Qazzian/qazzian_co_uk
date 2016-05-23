@@ -97,7 +97,7 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-contrib-less');
 
-	grunt.loadTasks('grunt');
+	grunt.loadTasks('gruntTasks');
 
 	grunt.registerTask('default', 'Run as part of normal development of the site templates', ['clean', 'copy', 'less', 'cmsBuildHtml']);
 	grunt.registerTask('install', 'Run when first installing this cms.', ['bowerInstall', 'copy', 'less', 'cmsBuildHtml']);
