@@ -1,0 +1,12 @@
+<h2>{{page.title}}</h2>
+
+<p>{{page.description}}</p>
+
+{{#page.userData}}
+	<p>
+	<ul class="social-links">
+		{{#url}}<li><a class="external-link" href="{{url}}">View Site</a>{{/url}}
+		{{#git}}<li><a class="git-link" href="{{git}}">github</a>{{/git}}
+	</ul>
+	</p>
+{{/page.userData}}
