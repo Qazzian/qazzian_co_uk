@@ -16,3 +16,5 @@ node_modules
 build
 tmp
 bower_components
+.idea
+.DS_Store
