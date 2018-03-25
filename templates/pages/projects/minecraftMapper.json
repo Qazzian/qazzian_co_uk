@@ -1,12 +1,12 @@
 {
 	"pageName": "Minecraft Mapper JS",
 	"title": "Minecraft Mapper JS",
-	"description": "JavaScript based mapping engine for Minecraft built on THREE.js.",
+	"description": "JavaScript mapping engine for Minecraft built on THREE.js.",
 	"keywords": "Minecraft map Threejs WebGL javascript js es6",
 	"css": [],
 	"js": [],
 	"userData" : {
 		"git": "http://github.com/Qazzian/minecraft-mapper-js",
-		"url": "/minecraft-mapper-js/"
+		"url": "http://www.qazzian.com:3000/"
 	}
 }

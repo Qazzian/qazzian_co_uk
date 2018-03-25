@@ -11,7 +11,7 @@
   },
   "dependencies": {},
   "scripts": {
-    "start": "server.js",
+    "start": "node server.js",
     "prepublish": "node_modules/.bin/bower install"
   },
   "engines": {
